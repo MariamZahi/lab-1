@@ -1,3 +1,4 @@
+/*
 fun main(){
     //store conversion values 
     val kmToMi = 0.621371
@@ -10,7 +11,7 @@ fun main(){
     print("Enter unit of measurement (km or mi)")
     val unitOfMeasurement = readLine()
 
-    var result: Double = 0.0
+    var result: Double
  
     if (unitOfMeasurement == "km"){
         result = numericValue * kmToMi
@@ -23,3 +24,33 @@ fun main(){
     )
     
 }
+*/
+
+/*//Conversion of inches to cm
+fun main(){
+    //store conversion values 
+    val inToCm = 2.54
+    print("Enter value: ")
+
+        var stringInput = readLine()
+    //toDouble converts the Int to Decimal
+    val numericValue= stringInput!!.toDouble()
+    
+    print("Enter unit of measurement (in or cm)")
+    val unitOfMeasurement = readLine()
+
+    var result: Double
+ 
+    if (unitOfMeasurement == "in"){
+        result = numericValue * inToCm
+        print("$numericValue in $unitOfMeasurement is $result in cm")
+    } else if (unitOfMeasurement == "cm"){
+        result = numericValue / inToCm
+        print("$numericValue in $unitOfMeasurement is $result in in")
+    } else ( 
+        print("$numericValue in $unitOfMeasurement is an unaccepted value")
+    )
+    
+}
+
+*/
