@@ -93,4 +93,21 @@ fun main() {
     }
 }
 */
+//Conversion feet to inches
+fun main() {
+    val ftToIn = 12
+    print("Enter value: ")
+    var stringInput = readLine()
+    val numericValue= stringInput!!.toDouble()
 
+
+    print("Choose ft or in? ")
+    val operator = readLine()
+
+    when (operator) {
+        "ft" -> print("$numericValue is ${numericValue*ftToIn} inches")
+        "in" -> print("$numericValue is ${numericValue/ftToIn} feet")
+        
+        else -> print("$operator is invalid")
+    }
+}
