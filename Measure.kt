@@ -33,13 +33,12 @@ fun main(){
     print("Enter value: ")
 
         var stringInput = readLine()
-    //toDouble converts the Int to Decimal
-    val numericValue= stringInput!!.toDouble()
+        val numericValue= stringInput!!.toDouble()
     
     print("Enter unit of measurement (in or cm)")
     val unitOfMeasurement = readLine()
 
-    var result: Double
+    var result: Double //no need to explicitly write 0.0
  
     if (unitOfMeasurement == "in"){
         result = numericValue * inToCm
@@ -61,10 +60,11 @@ fun main() {
     var stringInput = readLine()
     val numericValue= stringInput!!.toDouble()
 
-
+     
     print("Choose kg or lb? ")
     val operator = readLine()
 
+    //opereator for units
     when (operator) {
         "kg" -> print("$numericValue is ${numericValue*kgToLb} Pounds")
         "lb" -> print("$numericValue is ${numericValue/kgToLb} Kg")
@@ -104,6 +104,7 @@ fun main() {
     print("Choose ft or in? ")
     val operator = readLine()
 
+    //if wrong operator spelling then invalid
     when (operator) {
         "ft" -> print("$numericValue is ${numericValue*ftToIn} inches")
         "in" -> print("$numericValue is ${numericValue/ftToIn} feet")
@@ -124,6 +125,7 @@ fun main() {
     print("Choose cup or tb? ")
     val operator = readLine()
 
+    //short name for easy entry
     when (operator) {
         "cup" -> print("$numericValue is ${numericValue*cupToTbsp} Tablespoons")
         "tb" -> print("$numericValue is ${numericValue/cupToTbsp} Cups")
