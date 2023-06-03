@@ -55,28 +55,6 @@ fun main(){
 
 */
 /*//kg to pounds using when
-fun main(){
-    //store conversion values 
-    val kgToLb = 2.2
-    print("Enter value: ")
-
-        var stringInput = readLine()
-    //toDouble converts the Int to Decimal
-    val numericValue= stringInput!!.toDouble()
-    
-    print("Enter unit of measurement (kg or lb)")
-    val unitOfMeasurement = readLine()
-
-    var result: Double
- 
-    val  = when (unitOfMeasurement) {
-        "kg" = print("$numericValue is ${numericValue * kgToLb} Pounds")
-        else print ("$numericValue is ${numericValue / kgToLb} kg")
-    }
-        
-    
-}*/ 
-
 fun main() {
     val kgToLb = 2.2
     print("Enter value: ")
@@ -84,7 +62,7 @@ fun main() {
     val numericValue= stringInput!!.toDouble()
 
 
-    print("Enter either kg or lb")
+    print("Choose kg or lb? ")
     val operator = readLine()
 
     when (operator) {
@@ -94,3 +72,25 @@ fun main() {
         else -> print("$operator is invalid")
     }
 }
+*/
+/* 
+//grams to ounces
+fun main() {
+    val grToOz = 0.04
+    print("Enter value: ")
+    var stringInput = readLine()
+    val numericValue= stringInput!!.toDouble()
+
+
+    print("Choose grams or ounces? ")
+    val operator = readLine()
+
+    when (operator) {
+        "grams" -> print("$numericValue is ${numericValue*grToOz} ounces")
+        "ounces" -> print("$numericValue is ${numericValue/grToOz} grams")
+        
+        else -> print("$operator is invalid")
+    }
+}
+*/
+
