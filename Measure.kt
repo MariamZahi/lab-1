@@ -54,3 +54,43 @@ fun main(){
 }
 
 */
+/*//kg to pounds using when
+fun main(){
+    //store conversion values 
+    val kgToLb = 2.2
+    print("Enter value: ")
+
+        var stringInput = readLine()
+    //toDouble converts the Int to Decimal
+    val numericValue= stringInput!!.toDouble()
+    
+    print("Enter unit of measurement (kg or lb)")
+    val unitOfMeasurement = readLine()
+
+    var result: Double
+ 
+    val  = when (unitOfMeasurement) {
+        "kg" = print("$numericValue is ${numericValue * kgToLb} Pounds")
+        else print ("$numericValue is ${numericValue / kgToLb} kg")
+    }
+        
+    
+}*/ 
+
+fun main() {
+    val kgToLb = 2.2
+    print("Enter value: ")
+    var stringInput = readLine()
+    val numericValue= stringInput!!.toDouble()
+
+
+    print("Enter either kg or lb")
+    val operator = readLine()
+
+    when (operator) {
+        "kg" -> print("$numericValue is ${numericValue*kgToLb} Pounds")
+        "lb" -> print("$numericValue is ${numericValue/kgToLb} Kg")
+        
+        else -> print("$operator is invalid")
+    }
+}
